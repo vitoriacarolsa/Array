@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+</head>
+<body>
+    <script>
+
+
+//Drofo e Topper estão em uma aventura mágica. Faça um programa que contenha um inventário para cada um dos dois aventureiros - esse inventário será um array.
+
+let drofo = ['anel da invisibilidade', 'dois pares de botas mágicas', 'uma poção do sono', 'duas poções da inocência'];
+let tropper = ['capa da invisibilidade', 'uma pedra do despertar', 'uma varinha das varinhas', 'uma poção da inocência', 'duas poções da mentira', 'poção anti-inteligência'];
+
+
+ //No meio do caminho torper estava com sede, abriu sua mochila para procurar algo para beber, acabou consumindo uma de suas poções da mentira. Ganhou um par de botas mágicas do Drofo e continuaram a aventura, no meio do caminho encontraram um escudo mágico e uma espada mágica. 
+
+
+drofo[1] =" um par de botas ";
+tropper[4] =" uma poção da mentira "
+tropper.splice(1,1)
+tropper.push(" escudo magico "," espada magica "," par de botas ")
+
+
+//Drofo ganhou mais uma bota mágica, estava ficando muito cansado e decidiu tomar sua poção do sono, quando Drofo acordou, consumiu a poção anti-inteligência do Torper, começou andar de novo e se deparou com um ovo de dragão, e uma coxinha.
+
+
+drofo[1]=" dois pares de botas "
+drofo.splice(2,1);
+drofo.push(" ovo de dragão, " + "coxinha.");
+tropper.splice(4,1);
+tropper.splice(6,1);
+  
+
+alert(" Inventário do Drofo: "+ drofo + "   Inventário do Tropper: " +tropper)
+
+</script>
+</body>
+</html>
